@@ -1,8 +1,8 @@
 server/
 ├── config/
-│   ├── db.js                  # MongoDB connection
-│   ├── config.js              # Environment variables
-│   └── constants.js           # App constants
+│   ├── db.js
+│   ├── config.js
+│   └── constants.js
 ├── models/
 │   ├── User.js
 │   ├── Workout.js
@@ -10,7 +10,11 @@ server/
 │   ├── WorkoutPlan.js
 │   ├── Meal.js
 │   ├── Food.js
-│   └── Progress.js
+│   ├── Progress.js
+│   ├── Activity.js              # - Daily activity tracking
+│   ├── Achievement.js           # - User achievements
+│   ├── Streak.js                # - Streak tracking
+│   └── PersonalRecord.js        # - Personal records
 ├── controllers/
 │   ├── authController.js
 │   ├── userController.js
@@ -18,7 +22,10 @@ server/
 │   ├── exerciseController.js
 │   ├── planController.js
 │   ├── nutritionController.js
-│   └── progressController.js
+│   ├── progressController.js
+│   ├── dashboardController.js   # - Dashboard endpoints
+│   ├── analyticsController.js   # - Analytics endpoints
+│   └── achievementController.js # - Achievements endpoints
 ├── routes/
 │   ├── auth.js
 │   ├── users.js
@@ -26,24 +33,33 @@ server/
 │   ├── exercises.js
 │   ├── plans.js
 │   ├── nutrition.js
-│   └── progress.js
+│   ├── progress.js
+│   ├── dashboard.js             # - Dashboard routes
+│   ├── analytics.js             # - Analytics routes
+│   └── achievements.js          # - Achievements routes
 ├── middleware/
 │   ├── auth.js
 │   ├── validation.js
 │   ├── errorHandler.js
 │   └── rateLimiter.js
 ├── utils/
-│   ├── calculations.js        # BMR, TDEE, macros
+│   ├── calculations.js          # - Add new calculations
 │   ├── validators.js
 │   ├── helpers.js
-│   └── seedData.js            # Initial exercise library
+│   ├── seedData.js
+│   └── achievementChecker.js    # - Achievement logic
 ├── services/
 │   ├── emailService.js
-│   └── nutritionAPI.js        # External API integration
+│   ├── nutritionAPI.js
+│   ├── dashboardService.js      # - Dashboard business logic
+│   ├── analyticsService.js      # - Analytics business logic
+│   └── achievementService.js    # - Achievement business logic
 ├── tests/
 │   ├── auth.test.js
 │   ├── workout.test.js
-│   └── nutrition.test.js
-├── server.js                  # Entry point
+│   ├── nutrition.test.js
+│   ├── dashboard.test.js        # - Dashboard tests
+│   └── analytics.test.js        # - Analytics tests
+├── server.js
 ├── package.json
 └── .env
