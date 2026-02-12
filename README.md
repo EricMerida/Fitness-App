@@ -1,5 +1,5 @@
 # Capstone-Project
-The goal of this project isn't to create something that's never been done before. I want to work on a challenging project that will incorporate all of the full-stack skills I have been developing throughout the course.
+I want to work on a challenging project that will incorporate all of the full-stack skills I have been developing throughout the course.
 
 Here are my 3 ideas that I want to create for the capstone project
 
@@ -11,4 +11,6 @@ the app they can click on the restaurants near them and send a request out if an
 there.
 
 3. Fitness application. This application is to get people to work out. This is be more a helpful guide for people that want to lose weight, gain muscle, overall health. This application will require people to submit
-their goals and then the appliation will adjust to give out helpful videos on workouts, meals, and track their goals. 
+their goals and then the appliation will adjust to give out helpful videos on workouts, meals, and track their goals.
+
+After going through the ideas I am going to create a full stack  Fitness application. 
