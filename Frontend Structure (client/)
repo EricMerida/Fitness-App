@@ -1,0 +1,85 @@
+client/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button.jsx
+│   │   │   ├── Input.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├��─ Modal.jsx
+│   │   │   └── Navbar.jsx
+│   │   ├── auth/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── PrivateRoute.jsx
+│   │   ├── profile/
+│   │   │   ├── ProfileSetup.jsx
+│   │   │   ├── ProfileView.jsx
+│   │   │   ├── ProfileEdit.jsx
+│   │   │   └── GoalsSettings.jsx
+│   │   ├── dashboard/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── StatsCard.jsx
+│   │   │   ├── ActivityChart.jsx
+│   │   │   └── QuickActions.jsx
+│   │   ├── workouts/
+│   │   │   ├── WorkoutList.jsx
+│   │   │   ├── WorkoutDetail.jsx
+│   │   │   ├── WorkoutLog.jsx
+│   │   │   ├── ExerciseCard.jsx
+│   │   │   └── WorkoutTimer.jsx
+│   │   ├── nutrition/
+│   │   │   ├── CalorieTracker.jsx
+│   │   │   ├── MealLog.jsx
+│   │   │   ├── FoodSearch.jsx
+│   │   │   ├── NutritionStats.jsx
+│   │   │   └── WaterTracker.jsx
+│   │   ├── exercises/
+│   │   │   ├── ExerciseLibrary.jsx
+│   │   │   ├── ExerciseDetail.jsx
+│   │   │   ├── CustomExercise.jsx
+│   │   │   └── ExerciseFilter.jsx
+│   │   └── plans/
+│   │       ├── WorkoutPlans.jsx
+│   │       ├── PlanDetail.jsx
+│   │       ├── CreatePlan.jsx
+│   │       └── PlanCalendar.jsx
+│   ├── pages/
+│   │   ├── HomePage.jsx
+│   │   ├── DashboardPage.jsx
+│   │   ├── ProfilePage.jsx
+│   │   ├── WorkoutsPage.jsx
+│   │   ├── NutritionPage.jsx
+│   │   ├── ExercisesPage.jsx
+│   │   ├── PlansPage.jsx
+│   │   └── SettingsPage.jsx
+│   ├── context/
+│   │   ├── AuthContext.jsx
+│   │   ├── UserContext.jsx
+│   │   └── ThemeContext.jsx
+│   ├── hooks/
+│   │   ├── useAuth.js
+│   │   ├── useWorkout.js
+│   │   ├── useNutrition.js
+│   │   └── useLocalStorage.js
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── authService.js
+│   │   ├── workoutService.js
+│   │   ├── nutritionService.js
+│   │   └── exerciseService.js
+│   ├── utils/
+│   │   ├── constants.js
+│   │   ├── helpers.js
+│   │   ├── validators.js
+│   │   └── calculations.js
+│   ├── styles/
+│   │   ├── global.css
+│   │   └── variables.css
+│   ├── App.jsx
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── .env
