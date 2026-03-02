@@ -1,65 +1,32 @@
-server/
-├── config/
-│   ├── db.js
-│   ├── config.js
-│   └── constants.js
-├── models/
-│   ├── User.js
-│   ├── Workout.js
-│   ├── Exercise.js
-│   ├── WorkoutPlan.js
-│   ├── Meal.js
-│   ├── Food.js
-│   ├── Progress.js
-│   ├── Activity.js              # - Daily activity tracking
-│   ├── Achievement.js           # - User achievements
-│   ├── Streak.js                # - Streak tracking
-│   └── PersonalRecord.js        # - Personal records
-├── controllers/
-│   ├── authController.js
-│   ├── userController.js
-│   ├── workoutController.js
-│   ├── exerciseController.js
-│   ├── planController.js
-│   ├── nutritionController.js
-│   ├── progressController.js
-│   ├── dashboardController.js   # - Dashboard endpoints
-│   ├── analyticsController.js   # - Analytics endpoints
-│   └── achievementController.js # - Achievements endpoints
-├── routes/
-│   ├── auth.js
-│   ├── users.js
-│   ├── workouts.js
-│   ├── exercises.js
-│   ├── plans.js
-│   ├── nutrition.js
-│   ├── progress.js
-│   ├── dashboard.js             # - Dashboard routes
-│   ├── analytics.js             # - Analytics routes
-│   └── achievements.js          # - Achievements routes
-├── middleware/
-│   ├── auth.js
-│   ├── validation.js
-│   ├── errorHandler.js
-│   └── rateLimiter.js
-├── utils/
-│   ├── calculations.js          # - Add new calculations
-│   ├── validators.js
-│   ├── helpers.js
-│   ├── seedData.js
-│   └── achievementChecker.js    # - Achievement logic
-├── services/
-│   ├── emailService.js
-│   ├── nutritionAPI.js
-│   ├── dashboardService.js      # - Dashboard business logic
-│   ├── analyticsService.js      # - Analytics business logic
-│   └── achievementService.js    # - Achievement business logic
-├── tests/
-│   ├── auth.test.js
-│   ├── workout.test.js
-│   ├── nutrition.test.js
-│   ├── dashboard.test.js        # - Dashboard tests
-│   └── analytics.test.js        # - Analytics tests
-├── server.js
-├── package.json
-└── .env
+├── server/ # Express Backend
+│ ├── controllers/
+│ │ ├── auth.controller.js
+│ │ ├── dashboard.controller.js
+│ │ ├── foods.controller.js
+│ │ ├── meals.controller.js
+│ │ ├── profile.controller.js
+│ │ └── workouts.controller.js
+│ │
+│ ├── middlewares/
+│ │ └── auth.js
+│ │
+│ ├── models/
+│ │ ├── User.js
+│ │ ├── Workout.js
+│ │ └── MealLog.js
+│ │
+│ ├── routes/
+│ │ ├── auth.routes.js
+│ │ ├── dashboard.routes.js
+│ │ ├── foods.routes.js
+│ │ ├── meals.routes.js
+│ │ ├── profile.routes.js
+│ │ └── workouts.routes.js
+│ │
+│ ├── utils/
+│ │ └── calc.js
+│ │
+│ ├── app.js
+│ ├── db.js
+│ ├── .env
+│ └── package.json
