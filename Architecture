@@ -5,7 +5,7 @@
 │  │              │  │              │  │   (Redux/    │     │
 │  │ - Dashboard  │  │ - NavBar     │  │   Context)   │     │
 │  │ - Profile    │  │ - WorkoutLog │  │              │     │
-│  │ - Workouts   │  │ - CalTracker │  │              │     │
+│  │ - Workouts   │  │ - UpdateMeal │  │              │     │
 │  └──────────────┘  └──────────────┘  └──────────────┘     │
 └─────────────────────────────────────────────────────────��───┘
                           │
@@ -15,7 +15,7 @@
 │                  Backend (Node.js + Express)                │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
 │  │   Routes     │  │ Controllers  │  │  Middleware  │     │
-│  │              │  │              │  │              │     │
+│  │              │  │ - Food       │  │              │     │
 │  │ - Auth       │  │ - User       │  │ - Auth       │     │
 │  │ - Users      │  │ - Workout    │  │ - Validation │     │
 │  │ - Workouts   │  │ - Nutrition  │  │ - Error      │     │
