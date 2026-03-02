@@ -1,32 +1,42 @@
-client/src/
-├── components/
-│   ├── dashboard/
-│   │   ├── Dashboard.jsx               # Main dashboard container
-│   │   ├── DailySummary.jsx            # Today's overview
-│   │   ├── StatsCard.jsx               # Reusable stat card
-│   │   ├── CalorieProgress.jsx         # Circular calorie progress
-│   │   ├── MacroBreakdown.jsx          # Protein/Carbs/Fats bars
-│   │   ├── StreakTracker.jsx           # Streak display
-│   │   ├── QuickActions.jsx            # Quick action buttons
-│   │   ├── RecentWorkouts.jsx          # Last workouts list
-│   │   ├── RecentMeals.jsx             # Recent meals
-│   │   ├── WeeklyOverview.jsx          # 7-day mini calendar
-│   │   ├── AchievementBadges.jsx       # Recent achievements
-│   │   └── WeightChart.jsx             # Mini weight trend
-│   ├── analytics/
-│   │   ├── AnalyticsDashboard.jsx      # Main analytics page
-│   │   ├── WeightTrendChart.jsx        # Line chart for weight
-│   │   ├── WorkoutVolumeChart.jsx      # Bar chart for volume
-│   │   ├── CalorieAdherenceChart.jsx   # Line/area chart
-│   │   ├── ExerciseFrequencyChart.jsx  # Horizontal bar chart
-│   │   ├── MuscleGroupPieChart.jsx     # Pie/donut chart
-│   │   ├── MacroTrendsChart.jsx        # Stacked area chart
-│   │   ├── PersonalRecordsTimeline.jsx # Timeline component
-│   │   ├── ProgressReport.jsx          # Monthly report card
-│   │   ├── DateRangeSelector.jsx       # Time range picker
-│   │   └── StatComparison.jsx          # Compare periods
-│   └── achievements/
-│       ├── AchievementGrid.jsx         # All achievements
-│       ├── AchievementCard.jsx         # Single achievement
-│       ├── UnlockAnimation.jsx         # Achievement unlock popup
-│       └── ProgressBar.jsx             # Progress to next achievement
+
+├── client/ # React Frontend
+│ ├── src/
+│ │ ├── api/
+│ │ │ ├── authApi.js
+│ │ │ ├── dashboardApi.js
+│ │ │ ├── foodsApi.js
+│ │ │ ├── mealsApi.js
+│ │ │ ├── profileApi.js
+│ │ │ ├── userApi.js
+│ │ │ ├── workoutsApi.js
+│ │ │ └── http.js
+│ │ │
+│ │ ├── components/
+│ │ │ ├── common/
+│ │ │ │ └── ProtectedRoute.jsx
+│ │ │ ├── layout/
+│ │ │ │ └── AppLayout.jsx
+│ │ │ └── ui/
+│ │ │ ├── Button.jsx
+│ │ │ ├── Card.jsx
+│ │ │ └── Input.jsx
+│ │ │
+│ │ ├── context/
+│ │ ├── pages/
+│ │ │ ├── DashboardPage.jsx
+│ │ │ ├── HomePage.jsx
+│ │ │ ├── LoginPage.jsx
+│ │ │ ├── NutritionPage.jsx
+│ │ │ ├── ProfilePage.jsx
+│ │ │ └── RegisterPage.jsx
+│ │ │
+│ │ ├── styles/
+│ │ │ ├── app.css
+│ │ │ └── global.css
+│ │ │
+│ │ ├── app.jsx
+│ │ └── main.jsx
+│ │
+│ ├── index.html
+│ ├── vite.config.js
+│ └── package.json
