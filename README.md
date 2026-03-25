@@ -1,3 +1,7 @@
+DEMO  https://fitness-app-plum-ten.vercel.app/
+
+
+
 IronLog 🏋️‍♂️
 
 IronLog is a full-stack fitness tracking application that allows users to securely register, log in, and manage their workouts and nutrition data.
