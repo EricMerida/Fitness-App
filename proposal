@@ -1,1 +1,32 @@
+Capstone Step 2 - project proposal
 
+
+1. What tech stack will you use for your final project? 
+The tech Stack I will be using is MERN, MongoDB, Express, React, Node.js
+
+ 2. Is the front-end UI or the back-end going to be the focus of your project? Or are you going to make an evenly focused full-stack application? 
+I am going to evenly focus on a full-stack application. 
+
+3. Will this be a website? A mobile app? Something else?
+ I will creating a Mobile App
+
+4. What goal will your project be designed to achieve?
+ I want to achieve a user-friendly mobile app that helps individuals on their fitness goals.
+
+5. What kind of users will visit your app? In other words, what is the demographic of your users? The demographic will be anyone who is in the fitness field or someone who is struggling with their fitness goals or wants to start working out.
+
+6. What data do you plan on using? How are you planning on collecting your data? You may have not picked your actual API yet, which is fine, just outline what kind of data you would like it to contain. You are welcome to create your own API and populate it with data.
+The data that I plan to be using is public API on workouts, diets, meal plans, etc.
+
+● What does your database schema look like?
+-Looks like importing public APIs
+● What kinds of issues might you run into with your API? This is especially important if you are creating your own API, web scraping produces notoriously messy data
+-Issuing I might run into is getting the endpoints correct in my code and fetching all the data efficiently 
+.● Is there any sensitive information you need to secure? 
+-Yes, I will need to secure users' passwords to their account.
+● What functionality will your app include? 
+-User authenication, Navigations,  Data Handling, UI, Notifications, Security
+● What will the user flow look like?
+-Once the app is open the users will be on the home page and can search anything. If they prefer to have the app tailored to themselves then there will be an option to create an account. After creating an account then the app will store the data that they are looking for and allows them to set up meal plans, workout plans, etc. If a user does not create an account then everything will refresh and the app will not be tailored to them.
+● What features make your site more than a CRUD app? What are your stretch goals?
+-The functionality of my app will make the app a CRUD app and the stretch goals is to have many users for the app.
