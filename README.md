@@ -37,6 +37,14 @@ The application uses JWT authentication and protected routes to ensure secure ac
 - MongoDB Compass
 - Nodemon
 
+## Features
+- Create an account
+- log workouts and add comments to the workout
+- Log Nutrition and you can look up meals that you ate and from the USDA the micros will be included
+- Set gaols for nutrition
+- Track gym progess
+- Dashboard that gives you a run down on your activities and nutrition
+
 ## 🧱 Architecture
 
 The app follows a **client-server architecture**:
