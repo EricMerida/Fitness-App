@@ -36,3 +36,45 @@ The application uses JWT authentication and protected routes to ensure secure ac
 - Postman
 - MongoDB Compass
 - Nodemon
+
+## 🧱 Architecture
+
+The app follows a **client-server architecture**:
+
+- Frontend communicates with backend via REST API
+- Backend handles authentication, data validation, and database operations
+- MongoDB stores user, workout, and nutrition data
+
+---
+
+## 🗂 Database Schema
+
+(main/db.schem)
+
+---
+
+## 🔄 User Flow
+
+(main.user.flow
+
+---
+
+## ⚙️ How to Run Locally
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/EricMerida/Fitness-App
+cd ironlog
+2. Install dependencies
+
+Frontend:
+
+cd client
+npm install
+npm run dev
+
+Backend:
+
+cd server
+npm install
+npm run dev
