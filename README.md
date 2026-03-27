@@ -1,5 +1,7 @@
 IronLog 🏋️‍♂️
 
+live demo https://fitness-app-git-frontend-ericmeridas-projects.vercel.app/
+
 IronLog is a full-stack fitness tracking application that allows users to securely register, log in, and manage their workouts and nutrition data.
 
 The application uses JWT authentication and protected routes to ensure secure access to user data.
