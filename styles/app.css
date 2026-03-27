@@ -964,3 +964,100 @@ video {
     gap: 16px;
   }
 }
+html,
+body,
+#root,
+.app {
+width: 100%;
+max-width: 100%;
+min-width: 0;
+margin: 0;
+padding: 0;
+}
+
+body {
+overflow-x: hidden;
+}
+
+main,
+.page,
+.pageStack {
+width: 100%;
+max-width: 100%;
+min-width: 0;
+}
+
+.topbar,
+.topbarInner,
+.navMobileWrap {
+width: 100%;
+max-width: 100%;
+}
+
+.container {
+width: calc(100% - 24px) !important;
+max-width: 1120px;
+margin-left: auto;
+margin-right: auto;
+}
+
+@media (max-width: 768px) {
+.container {
+width: calc(100% - 24px) !important;
+max-width: 100%;
+}
+
+.topbarInner {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+.topbarActions {
+width: 100%;
+}
+
+.topbarActions .btn {
+width: 100%;
+}
+
+.pageHeader {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.pageHeaderRight {
+width: 100%;
+}
+
+.pageHeaderRight .input {
+width: 100%;
+}
+
+.grid3,
+.grid4,
+.metricGrid,
+.recoveryBox {
+grid-template-columns: 1fr !important;
+}
+
+.pillRow,
+.navMobile {
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+}
+
+.pillLink,
+.navBtn {
+white-space: nowrap;
+}
+
+.card,
+.rowCard,
+.metric,
+.recoveryStat {
+width: 100%;
+max-width: 100%;
+}
+}
