@@ -775,3 +775,192 @@
   .navDesktop{ display: none; }
   .navMobileWrap{ display: block; }
 }
+/* =========================
+   GLOBAL MOBILE SAFETY
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img,
+svg,
+canvas,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   MOBILE + TABLET LAYOUT
+========================= */
+
+@media (max-width: 768px) {
+
+  /* Container spacing */
+  .container {
+    width: min(100% - 24px, 1120px);
+  }
+
+  /* Topbar */
+  .topbar {
+    padding: 12px 0;
+    display: block;
+  }
+
+  .topbarInner {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brandName,
+  .brandTag {
+    word-break: break-word;
+  }
+
+  .topbarActions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .topbarActions .btn {
+    width: 100%;
+  }
+
+  /* Mobile nav */
+  .navMobileWrap {
+    padding-top: 12px;
+    padding-bottom: 4px;
+  }
+
+  .navMobile {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+
+  .navMobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Typography */
+  .pageTitle {
+    font-size: 28px;
+  }
+
+  .bigNumber {
+    font-size: 34px;
+  }
+
+  /* Cards */
+  .card,
+  .rowCard,
+  .metric,
+  .recoveryStat {
+    padding: 14px;
+  }
+
+  /* Grid layouts */
+  .metricGrid,
+  .recoveryBox,
+  .grid4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Flex stacking */
+  .cardHeader,
+  .cardTop,
+  .kvRow,
+  .rowCard,
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pageHeaderRight {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  /* =========================
+     DASHBOARD-SPECIFIC FIXES
+  ========================= */
+
+  /* Force dashboard to 1 column */
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  /* Header stacking (title + date) */
+  .pageHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pageHeaderRight .input {
+    width: 100%;
+  }
+
+  /* Fix large numbers */
+  .metricValue {
+    font-size: 28px !important;
+  }
+
+  /* Pill links scroll instead of squish */
+  .pillRow {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .pillLink {
+    white-space: nowrap;
+  }
+
+  /* Buttons full width */
+  .btnBlock {
+    width: 100%;
+  }
+
+  /* Key-value rows */
+  .kv {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  /* Progress text tighter */
+  .progressTop {
+    font-size: 13px;
+  }
+
+  /* Page spacing */
+  .pageStack {
+    gap: 16px;
+  }
+}
