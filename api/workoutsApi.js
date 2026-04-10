@@ -1,7 +1,10 @@
 import { apiFetch } from "./http";
 
-export function listWorkoutsApi(token, { page = 1, limit = 10 } = {}) {
-  return apiFetch(`/workouts?page=${page}&limit=${limit}`, { token });
+export function listWorkoutsApi(token, date, { page = 1, limit = 10 } = {}) {
+  return apiFetch(
+    `/workouts?page=${page}&limit=${limit}&from=${date}&to=${date}`,
+    { token }
+  );
 }
 
 export function createWorkoutApi(token, workout) {
