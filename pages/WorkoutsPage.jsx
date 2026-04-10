@@ -34,8 +34,9 @@ export default function WorkoutsPage() {
     mutationFn: () =>
       createWorkoutApi(token, {
         date,
-        name: name.trim(),
+        title: name.trim(),
         notes: notes.trim(),
+        exercises: [],
       }),
     onSuccess: () => {
       setName("");
@@ -55,7 +56,6 @@ export default function WorkoutsPage() {
 
   return (
     <div className="pageStack">
-      {/* Header */}
       <div className="pageHeader">
         <div>
           <h1 className="pageTitle">Workouts</h1>
@@ -77,7 +77,6 @@ export default function WorkoutsPage() {
         </div>
       </div>
 
-      {/* Create */}
       <Card>
         <h2 className="sectionTitle">Add workout</h2>
         <p className="muted">
@@ -119,7 +118,6 @@ export default function WorkoutsPage() {
         </div>
       </Card>
 
-      {/* List */}
       {isLoading && (
         <Card>
           <p className="muted">Loading workouts...</p>
@@ -143,7 +141,7 @@ export default function WorkoutsPage() {
           <Card key={w._id}>
             <div className="rowCard">
               <div>
-                <div className="rowTitle">{w.name}</div>
+                <div className="rowTitle">{w.title}</div>
                 {w.notes && <div className="muted">{w.notes}</div>}
                 <div className="muted" style={{ fontSize: 12, marginTop: 6 }}>
                   Volume: {Math.round(w.totalVolume || 0)}
