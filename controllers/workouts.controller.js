@@ -9,11 +9,15 @@ function isValidObjectId(id) {
 // POST /workouts
 async function createWorkout(req, res, next) {
   try {
-    const { date, title, notes, exercises = [] } = req.body || {};
+    const { date, title, name, notes, exercises = [] } = req.body || {};
 
-    if (!date) return res.status(400).json({ error: "date is required" });
+    const workoutTitle = title?.trim() || name?.trim();
 
-    if (!title?.trim()) {
+    if (!date) {
+      return res.status(400).json({ error: "date is required" });
+    }
+
+    if (!workoutTitle) {
       return res.status(400).json({ error: "title is required" });
     }
 
@@ -21,7 +25,6 @@ async function createWorkout(req, res, next) {
       return res.status(400).json({ error: "exercises must be an array" });
     }
 
-    // only validate exercises if any were provided
     for (const ex of exercises) {
       if (!ex?.name) {
         return res.status(400).json({ error: "each exercise must have a name" });
@@ -34,7 +37,7 @@ async function createWorkout(req, res, next) {
     const workout = new Workout({
       user: req.user.id,
       date: new Date(date),
-      title: title.trim(),
+      title: workoutTitle,
       notes: notes || "",
       exercises,
     });
