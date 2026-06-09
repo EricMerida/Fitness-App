@@ -22,7 +22,7 @@ export default function AppLayout() {
           <div className="brand">
             <span className="brandMark" aria-hidden="true">⚡</span>
             <div>
-              <div className="brandName">PulseFit</div>
+              <div className="brandName">IronLog</div>
               <div className="brandTag">Train • Track • Improve</div>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function AppLayout() {
       </main>
 
       <footer className="footer">
-        <div className="muted">© {new Date().getFullYear()} PulseFit</div>
+        <div className="muted">© {new Date().getFullYear()} IronLog</div>
         <div className="muted">Built for consistency.</div>
       </footer>
     </div>
